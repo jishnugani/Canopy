@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Project Name</title>
+</head>
+<body>
+    <main>
+
+        <section id="event-creation">
+            <h2>Create a Planting Event</h2>
+            <form id="event-form">
+                <div class="form-group">
+                    <label for="date">Event Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="start-time">Start Time:</label>
+                    <input type="time" id="start-time" name="start-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="end-time">End Time:</label>
+                    <input type="time" id="end-time" name="end-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="zone">Planting Zone:</label>
+                    <select id="zone" name="zone"> 
+                        <option value="zone1">Zone 1</option>
+                        <option value="zone2">Zone 2</option>
+                        <option value="zone3">Zone 3</option>
+
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="details">Details (What to Bring, etc.):</label>
+                    <textarea id="details" name="details"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-limit">Volunteer Limit:</label>
+                    <input type="number" id="volunteer-limit" name="volunteer-limit">
+                </div>
+                <button type="submit">Create Event</button>
+            </form>
+        </section>
+
+        <section id="progress-update">
+            <h2>Report Planting Progress</h2>
+            <table>
+                <tr>
+                    <th>Event Date</th>
+                    <th>Zone</th>
+                    <th>Volunteers</th>
+                    <th>Trees Planted</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>2021-05-01</td>
+                    <td>Zone 1</td>
+                    <td>10</td>
+                    <td>50</td>
+                    <td><button>Update</button></td>
+                </tr>
+                <tr>
+                    <td>2021-05-02</td>
+                    <td>Zone 2</td>
+                    <td>15</td>
+                    <td>75</td>
+                    <td><button>Update</button></td>
+                </tr>
+                <tr>
+                    <td>2021-05-03</td>
+                    <td>Zone 3</td>
+                    <td>20</td>
+                    <td>100</td>
+                    <td><button>Update</button></td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script> 
+</body>
+</html>
