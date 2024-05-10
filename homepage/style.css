@@ -1,0 +1,164 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    background-color: #4CAF50;
+}
+
+nav ul {
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+nav li {
+    float: left; 
+}
+
+nav li a {
+    display: block;
+    background-color: #4CAF50; 
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+
+nav li a:hover {
+    background-color: #408040; 
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 10px;
+    padding: 10px;
+}
+
+#image-gallery img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover; 
+    border-radius: 5px; 
+    transition: transform 0.3s ease; 
+}
+#image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.hover-effect {
+    position: relative;
+}
+
+.hover-effect img {
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.hover-effect .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-effect:hover img {
+    opacity: 0.9;
+}
+
+.hover-effect:hover .hover-text {
+    opacity: 1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 200px;
+}
+
+.content.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-image {
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    
+}
+
+.content-text {
+    width: 50%;
+    padding: 20px;
+}
+
+footer {
+    background-color: #008000; 
+    color: #fff; 
+    padding: 10px 0; 
+    margin-top: 20px;
+}
+
+.footer-content, .footer-bottom {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.social-media a, .footer-nav a {
+    display: block;
+    margin: 3px 0;
+}
+
+.social-media img, .footer-nav img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social-media {
+    order: 1;
+    align-self: flex-start;
+    margin-right: 20px;
+}
+
+.footer-nav {
+    order: 2;
+    align-self: center;
+}
